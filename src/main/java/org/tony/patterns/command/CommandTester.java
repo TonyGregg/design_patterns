@@ -8,10 +8,19 @@ public class CommandTester {
   public static void main(String[] args) {
     RemoteControl remoteControl = new RemoteControl();
     Light light = new Light();
-    LightOnCommand lightOnCommand = new LightOnCommand(light);
+    Command lightOnCommand = new LightOnCommand(light);
     remoteControl.setCommand(lightOnCommand);
+    TV tv = new TV();
+    Command tvOnCommand = new TVOnCommand(tv);
+
+
     remoteControl.pressButton();
     remoteControl.pressUndo();
+
+    remoteControl.setCommand(tvOnCommand);
+    remoteControl.pressButton();
+    remoteControl.pressUndo();
+
   }
 
 }
