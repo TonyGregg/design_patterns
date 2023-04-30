@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6d8abfd-4421-4eb2-aaa7-e4a0c65a6b94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/AnimalVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Elephant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/FeedingCostVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Giraffe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Lion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Zoo.java" afterDir="false" />
+    <list default="true" id="e6d8abfd-4421-4eb2-aaa7-e4a0c65a6b94" name="Changes" comment="Draft.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/command/CommandTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/command/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/command/LightOnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/command/RemoteControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tony/patterns/momento/Document.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Elephant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Elephant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Giraffe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Giraffe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tony/patterns/visitor/Lion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +42,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2P85gOkZxAQI4MXIM4GmjksyYSL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,9 +58,29 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "Lombok"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="CommandTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.tony.patterns.command.CommandTester" />
+      <module name="design_patterns.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tony.patterns.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CommandTester" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,6 +90,29 @@
       <option name="presentableId" value="Default" />
       <updated>1682825978707</updated>
     </task>
+    <task id="LOCAL-00001" summary="Draft.">
+      <created>1682828296019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682828296019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Draft." />
+    <option name="LAST_COMMIT_MESSAGE" value="Draft." />
   </component>
 </project>

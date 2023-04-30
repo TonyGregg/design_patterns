@@ -18,6 +18,17 @@ public class Elephant implements Animal{
     public void accept(AnimalVisitor visitor) {
         visitor.visit(this);
     }
-    // other elephant-specific methods...
+    // other elephant-specific methods.
+
+    @Override
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
 
 }

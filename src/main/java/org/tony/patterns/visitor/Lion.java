@@ -17,5 +17,12 @@ public class Lion implements Animal {
     public void accept(AnimalVisitor visitor) {
         visitor.visit(this);
     }
+    //override other methods
+    public int getAge() {
+        return age;
+    }
+    public String getName() {
+        return name;
+    }
 
 }

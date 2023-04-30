@@ -21,4 +21,10 @@ public class Giraffe implements Animal {
     visitor.visit(this);
   }
   // other giraffe-specific methods...
+  public int getAge() {
+    return age;
+  }
+  public String getName() {
+    return name;
+  }
 }

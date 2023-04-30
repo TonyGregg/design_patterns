@@ -20,5 +20,25 @@ refer FeedingCostVisitor.java
 
 Finally, we can create a Zoo class that contains a list of animals and uses the visitor to calculate the total feeding cost:
 
-## 2. Momento Pattern.
-// TODO: Create classes for the Momento Pattern in package pattern.momento
+## 2. Command Pattern.
+The command pattern is a behavioral design pattern that allows you to encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
+In this pattern, you create a separate object called the Invoker that receives the command object and invokes the command. 
+The invoker object then forwards the request to the appropriate object, called the Receiver, which performs the actual work.
+
+Here's an example of how to implement the Command Pattern in Java:
+
+Let's say we have a light switch that can be turned on and off. We want to be able to turn the light on and off using a remote control, but we don't want to have to modify the light switch's code to add this functionality. Instead, we can use the Command Pattern.
+
+We create a Command interface that has methods to execute and undo the command.
+
+We then create ConcreteCommand classes that implement the Command interface. For example, we can create a class called LightOnCommand that turns the light on
+
+The LightOnCommand class takes a Light object in its constructor and implements the execute() and undo() methods. The execute() method calls the turnOn() method on the Light object, and the undo() method calls the turnOff() method on the Light object.
+
+We then create an Invoker class that takes a Command object in its constructor and has a method called executeCommand() that calls the execute() method on the Command object.
+
+Finally, we create a Receiver class that has a method called turnOn() that turns the light on and a method called turnOff() that turns the light off.
+
+The RemoteControl class takes a Command object in its setCommand() method and invokes the execute() method on it in its pressButton() method. The pressUndo() method calls the undo() method on the Command object.
+
+We can then use the Command Pattern to turn on the light:
