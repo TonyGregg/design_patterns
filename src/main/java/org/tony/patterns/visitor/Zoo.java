@@ -21,4 +21,17 @@ public class Zoo {
     return visitor.getTotalCost();
   }
 
+  public static void main(String[] args) {
+    Animal elephant = new Elephant("Jumbo", 10);
+    Animal lion = new Lion("Simba", 5);
+    Animal giraffe = new Giraffe("Gerry", 7);
+    Zoo zoo = new Zoo();
+    zoo.addAnimal(elephant);
+    zoo.addAnimal(lion);
+    zoo.addAnimal(giraffe);
+    zoo.addAnimal(new Elephant("Jumbo2", 10));
+    zoo.addAnimal(new Lion("Simba2", 5));
+    System.out.println("Total cost: " + zoo.getTotalFeedingCost());
+  }
+
 }
